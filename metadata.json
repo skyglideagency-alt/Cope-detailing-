@@ -1,0 +1,6 @@
+{
+  "name": "Cope's Auto Detail",
+  "description": "Mobile auto detailing website for Cope's Auto Detail in Muncie, IN featuring online booking, before-and-after showcase gallery, instant quote calculator, and lead conversion tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
