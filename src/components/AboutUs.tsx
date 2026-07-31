@@ -2,6 +2,7 @@ import React from "react";
 import { BUSINESS_INFO } from "../data/detailingData";
 import { ShieldCheck, Award, MapPin, Wrench, Sparkles, HeartHandshake, CheckCircle2 } from "lucide-react";
 import { motion } from "motion/react";
+import copesAboutHeroImg from "../assets/images/copes_about_hero_1785476871132.jpg";
 
 export const AboutUs: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const AboutUs: React.FC = () => {
           >
             <div className="relative rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl group">
               <motion.img
-                src="/images/copes_about_hero_1785476871132.jpg"
+                src={copesAboutHeroImg}
                 alt="Cope's Mobile Detailing Professional Rig"
                 referrerPolicy="no-referrer"
                 whileHover={{ scale: 1.05 }}

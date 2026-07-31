@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BUSINESS_INFO } from "../data/detailingData";
 import { Phone, Sparkles, Star, CheckCircle2, ArrowDown, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import heroCarWashImg from "../assets/images/hero_car_wash_bright.jpg";
 
 const FUNNY_HEADINGS = [
   {
@@ -28,7 +29,7 @@ export const Hero: React.FC = () => {
       {/* Background Hero Image with Vibrant Gradient Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.img
-          src="/images/hero_car_wash_bright.jpg"
+          src={heroCarWashImg}
           alt="Cope's Auto Detail Luxury Car Wash and Detailing"
           referrerPolicy="no-referrer"
           initial={{ scale: 1.15, opacity: 0 }}
