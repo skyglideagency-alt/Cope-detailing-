@@ -67,12 +67,6 @@ export const BeforeAfterSlider: React.FC = () => {
                       src={item.beforeImg}
                       alt={`${item.title} Before`}
                       referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        if (!target.src.includes('unsplash')) {
-                          target.src = 'https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80';
-                        }
-                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <motion.div 
@@ -95,12 +89,6 @@ export const BeforeAfterSlider: React.FC = () => {
                       src={item.afterImg}
                       alt={`${item.title} After`}
                       referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        if (!target.src.includes('unsplash')) {
-                          target.src = 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80';
-                        }
-                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <motion.div 

@@ -3,7 +3,7 @@ import { BUSINESS_INFO } from "../data/detailingData";
 import { ShieldCheck, Award, MapPin, Wrench, Sparkles, HeartHandshake, CheckCircle2 } from "lucide-react";
 import { motion } from "motion/react";
 
-const copesAboutHeroImg = "/images/copes_about_hero.jpg";
+import copesAboutHeroImg from "../assets/images/copes_about_hero.jpg";
 
 export const AboutUs: React.FC = () => {
   return (
@@ -27,12 +27,6 @@ export const AboutUs: React.FC = () => {
                 src={copesAboutHeroImg}
                 alt="Cope's Mobile Detailing Professional Rig"
                 referrerPolicy="no-referrer"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.src.includes('unsplash')) {
-                    target.src = 'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=80';
-                  }
-                }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
                 className="w-full h-[400px] object-cover"
