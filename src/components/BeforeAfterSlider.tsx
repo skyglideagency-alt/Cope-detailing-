@@ -67,6 +67,13 @@ export const BeforeAfterSlider: React.FC = () => {
                       src={item.beforeImg}
                       alt={`${item.title} Before`}
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (item.beforeImg && typeof item.beforeImg === 'string' && !target.src.includes('/images/')) {
+                          const filename = item.beforeImg.split('/').pop()?.split('?')[0];
+                          if (filename) target.src = `/images/${filename}`;
+                        }
+                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <motion.div 
@@ -89,6 +96,13 @@ export const BeforeAfterSlider: React.FC = () => {
                       src={item.afterImg}
                       alt={`${item.title} After`}
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (item.afterImg && typeof item.afterImg === 'string' && !target.src.includes('/images/')) {
+                          const filename = item.afterImg.split('/').pop()?.split('?')[0];
+                          if (filename) target.src = `/images/${filename}`;
+                        }
+                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <motion.div 

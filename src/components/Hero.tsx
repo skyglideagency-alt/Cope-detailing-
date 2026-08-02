@@ -33,6 +33,12 @@ export const Hero: React.FC = () => {
           src={heroCarWashImg}
           alt="Cope's Auto Detail Luxury Car Wash and Detailing"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.includes('/images/')) {
+              target.src = '/images/hero_car_wash_bright.jpg';
+            }
+          }}
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1.05, opacity: 0.65 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
