@@ -1,12 +1,12 @@
 import { ServicePackage, AddOnService, BeforeAfterItem, Testimonial, FAQItem, VehicleCategory } from "../types";
-import suvTrunkBefore from "../assets/images/suv_trunk_before_1785603112784.jpg";
-import suvTrunkAfter from "../assets/images/suv_trunk_after_1785603127421.jpg";
-import consoleBefore from "../assets/images/console_before_1785603141184.jpg";
-import consoleAfter from "../assets/images/console_after_1785603153141.jpg";
-import paintBefore from "../assets/images/paint_before_1785603167711.jpg";
-import paintAfter from "../assets/images/paint_after_1785603182453.jpg";
-import dashBefore from "../assets/images/dash_before_1785603197543.jpg";
-import dashAfter from "../assets/images/dash_after_1785603213230.jpg";
+import fbImg137 from "../assets/images/FB_IMG_1785402137231.jpg";
+import fbImg140 from "../assets/images/FB_IMG_1785402140428.jpg";
+import fbImg145 from "../assets/images/FB_IMG_1785402145286.jpg";
+import fbImg148 from "../assets/images/FB_IMG_1785402148281.jpg";
+import fbImg151 from "../assets/images/FB_IMG_1785402151560.jpg";
+import fbImg154 from "../assets/images/FB_IMG_1785402154538.jpg";
+import fbImg118 from "../assets/images/FB_IMG_1785402118361.jpg";
+import fbImg121 from "../assets/images/FB_IMG_1785402121191.jpg";
 
 export const BUSINESS_INFO = {
   name: "Cope's Auto Detail",
@@ -179,8 +179,8 @@ export const BEFORE_AFTER_GALLERY: BeforeAfterItem[] = [
     title: "SUV Cargo & Interior Deep Extraction",
     category: "Trunk Cargo",
     vehicle: "Client Vehicle",
-    beforeImg: suvTrunkBefore,
-    afterImg: suvTrunkAfter,
+    beforeImg: fbImg137,
+    afterImg: fbImg140,
     description: "Deep pet hair, sand, and ground-in dirt extracted from carpet weave using commercial high-suction vacuum and specialized detailing tools.",
     highlightTag: "Deep Interior Cleaning",
   },
@@ -189,8 +189,8 @@ export const BEFORE_AFTER_GALLERY: BeforeAfterItem[] = [
     title: "Console, Seats & Interior Detail Transformation",
     category: "Console",
     vehicle: "Client Vehicle",
-    beforeImg: consoleBefore,
-    afterImg: consoleAfter,
+    beforeImg: fbImg145,
+    afterImg: fbImg148,
     description: "Spills, crumbs, and embedded grime stripped from controls, cup holders, and seats leaving UV-protected, clean trim.",
     highlightTag: "Steam Sanitation",
   },
@@ -199,8 +199,8 @@ export const BEFORE_AFTER_GALLERY: BeforeAfterItem[] = [
     title: "Full Paint Correction & Gloss Paint Reflection",
     category: "Exterior",
     vehicle: "Client Vehicle",
-    beforeImg: paintBefore,
-    afterImg: paintAfter,
+    beforeImg: fbImg151,
+    afterImg: fbImg154,
     description: "Hand wash, clay bar treatment, and ceramic gloss sealant applied to deliver a deep mirror reflection and hydro-phobic finish.",
     highlightTag: "High Gloss Finish",
   },
@@ -209,8 +209,8 @@ export const BEFORE_AFTER_GALLERY: BeforeAfterItem[] = [
     title: "Dashboard & Driver Area Deep Clean",
     category: "Dashboard",
     vehicle: "Client Vehicle",
-    beforeImg: dashBefore,
-    afterImg: dashAfter,
+    beforeImg: fbImg118,
+    afterImg: fbImg121,
     description: "Thick dust and grime removed from vents, buttons, and climate controls, restoring a clean factory matte look.",
     highlightTag: "Dash Restoration",
   },
