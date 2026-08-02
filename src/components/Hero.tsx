@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { BUSINESS_INFO } from "../data/detailingData";
 import { Phone, Sparkles, Star, CheckCircle2, ArrowDown, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import heroCarWashImg from "../assets/images/hero_car_wash_bright_1785603083962.jpg";
+
+const heroCarWashImg = "/images/hero_car_wash_bright.jpg";
 
 const FUNNY_HEADINGS = [
   {

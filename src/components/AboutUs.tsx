@@ -2,7 +2,8 @@ import React from "react";
 import { BUSINESS_INFO } from "../data/detailingData";
 import { ShieldCheck, Award, MapPin, Wrench, Sparkles, HeartHandshake, CheckCircle2 } from "lucide-react";
 import { motion } from "motion/react";
-import copesAboutHeroImg from "../assets/images/copes_about_hero_1785603098967.jpg";
+
+const copesAboutHeroImg = "/images/copes_about_hero.jpg";
 
 export const AboutUs: React.FC = () => {
   return (
