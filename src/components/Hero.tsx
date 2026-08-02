@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BUSINESS_INFO } from "../data/detailingData";
 import { Phone, Sparkles, Star, CheckCircle2, ArrowDown, Zap } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import heroCarWashImg from "../assets/images/hero_car_wash_bright.jpg";
+import heroCarWashImg from "../assets/images/hero_car_wash_bright_1785603083962.jpg";
 
 const FUNNY_HEADINGS = [
   {
@@ -32,6 +32,12 @@ export const Hero: React.FC = () => {
           src={heroCarWashImg}
           alt="Cope's Auto Detail Luxury Car Wash and Detailing"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.includes('unsplash')) {
+              target.src = 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=80';
+            }
+          }}
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1.05, opacity: 0.65 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
