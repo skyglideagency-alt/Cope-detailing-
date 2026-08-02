@@ -4,6 +4,7 @@ import { ShieldCheck, Award, MapPin, Wrench, Sparkles, HeartHandshake, CheckCirc
 import { motion } from "motion/react";
 
 import copesAboutHeroImg from "../assets/images/copes_about_hero.jpg";
+import { handleImageError } from "../utils/imageUtils";
 
 export const AboutUs: React.FC = () => {
   return (
@@ -27,12 +28,7 @@ export const AboutUs: React.FC = () => {
                 src={copesAboutHeroImg}
                 alt="Cope's Mobile Detailing Professional Rig"
                 referrerPolicy="no-referrer"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.src.includes('/images/')) {
-                    target.src = '/images/copes_about_hero.jpg';
-                  }
-                }}
+                onError={(e) => handleImageError(e, copesAboutHeroImg)}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
                 className="w-full h-[400px] object-cover"
