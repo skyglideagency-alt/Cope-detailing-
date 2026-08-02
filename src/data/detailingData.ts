@@ -23,9 +23,9 @@ export const BUSINESS_INFO = {
   guarantee: "We Beat The Competition's Prices! 100% Mobile Convenience & Satisfaction Guaranteed.",
   hours: "Monday - Saturday: 8:00 AM - 7:00 PM | Sunday: By Appointment",
   rating: 4.9,
-  reviewsCount: 84,
+  reviewsCount: 89,
   stats: [
-    { label: "Vehicles Detailed", value: "1,250+" },
+    { label: "Vehicles Detailed", value: "1,300+" },
     { label: "Years Experience", value: "10+" },
     { label: "Satisfaction", value: "100%" },
     { label: "Mobile Service", value: "Anywhere" },

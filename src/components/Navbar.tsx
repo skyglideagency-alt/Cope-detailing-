@@ -44,8 +44,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin }) => {
             <span className="font-extrabold text-base sm:text-lg tracking-tight text-white leading-tight">
               Cope's <span className="text-red-500">Auto Detail</span>
             </span>
-            <span className="text-[10px] text-zinc-400 tracking-wider uppercase font-semibold">
-              Mobile Service • Muncie, IN
+            <span className="text-[10px] text-zinc-400 tracking-wider uppercase font-semibold flex items-center gap-1">
+              <span className="text-amber-400">★ 4.9</span> Mobile Service • Muncie, IN
             </span>
           </div>
         </motion.a>
